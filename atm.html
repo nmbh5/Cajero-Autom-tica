@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Cajero Automático</title>
+    <style>
+    body
+    {
+      background-color: #eb5050
+      text-align: center;
+      font-family: serif;
+    }
+    .column
+    {
+      float: left;
+      width: 33,33%
+    }
+    /*Clear floats after the columns*/
+    .row:after
+    {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <div class="column" name="left">
+        <br /><br /><hr color="#47646b" />
+        <h2><font color="blue">¿Como usar el cajero?</font></h2>
+        <p>*Pon la cantidad de dinero que <br /> quieres sacar en billetes </p>
+          <p>*Haz click en el boton "Extraer"</p>
+                <p>*Haz click en el boton "<strong>Otra vez</strong>" para
+                  <br />reiniciar el saldo.</p><br /><hr color="#47646b"/>
+                  </div>
+                    <div class="column" name="center" />
+                      <p><input type="button" value="Otravez" id="reiniciarhd" />
+                      </p>
+    <p>
+      <img src="cajero.gif" />
+    </p>
+    <p>
+      <input type="number" id="dinero" />
+      <input type="button" value="Extraer" id="extraer" />
+    </p>
+    <p id="finalizado"></p>
+    <p id="sinDinero"></p>
+    <p id="resultado"></p>
+  </div>
+    <script src="cajero.js">
+    </script>
+  </body>
+</html>
